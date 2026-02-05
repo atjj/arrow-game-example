@@ -1,17 +1,12 @@
 import { TypographyHeader, TypographyText } from "../../../UI"
-
+import { useTranslation } from "react-i18next"
 const Description: React.FC = () => {
+  const { t } = useTranslation()
   return (
     <div>
-      <TypographyHeader>↑↓→← Arrow-game description</TypographyHeader>
-      <TypographyText>
-        Player's goal is to press the keyboard arrow key that was shown to him
-        before the next one appears.
-      </TypographyText>
-      <TypographyText>
-        After three consecutive successful hits - game won, after three errors -
-        lost.
-      </TypographyText>
+      <TypographyHeader>{t("gameDescription.title")}</TypographyHeader>
+      <TypographyText>{t("gameDescription.desc1")}</TypographyText>
+      <TypographyText>{t("gameDescription.desc2")}</TypographyText>
     </div>
   )
 }

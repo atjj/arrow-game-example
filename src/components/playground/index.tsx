@@ -8,7 +8,6 @@ import KeyPressed from "./ui/KeyPressed"
 import Score from "./ui/Score"
 import Modal from "./ui/Modal"
 import Description from "./ui/Description"
-
 import styles from "./style.module.css"
 
 const Playground: React.FC = () => {

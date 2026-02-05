@@ -4,6 +4,7 @@ import { resetStore } from "../../slices"
 import { useAppDispatch } from "../../../../app/hooks"
 import ResultMessage from "./ResultMessage"
 import { Button } from "../../../UI"
+import { useTranslation } from "react-i18next"
 export interface IModalProps {
   setIsShowModal: React.Dispatch<React.SetStateAction<boolean>>
   isSuccessEndGame: boolean
@@ -11,6 +12,7 @@ export interface IModalProps {
 
 import styles from "./style.module.css"
 const Modal: React.FC<IModalProps> = props => {
+  const { t } = useTranslation()
   const { setIsShowModal, isSuccessEndGame } = props
 
   const dispatch = useAppDispatch()
@@ -29,7 +31,7 @@ const Modal: React.FC<IModalProps> = props => {
       >
         <ResultMessage isSuccessEndGame={isSuccessEndGame} />
         <Button onClick={handleClose} className={styles.button}>
-          Start New Game
+          {t("modal.buttonText")}
         </Button>
       </div>
     </MaterialModal>

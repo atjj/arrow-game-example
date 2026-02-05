@@ -4,7 +4,7 @@ import { Provider } from "react-redux"
 import { StyledEngineProvider } from "@mui/material"
 import { App } from "./App"
 import { store } from "./app/store"
-
+import "./i18n"
 import "./index.css"
 
 const container = document.getElementById("root")

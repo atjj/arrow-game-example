@@ -4,10 +4,11 @@ import loader from "./img/loader.svg"
 import styles from "./style.module.css"
 export interface IWelcomeTextProps {
   isTimerActive: boolean
+  description: string
 }
 
 const WelcomeText: React.FC<IWelcomeTextProps> = props => {
-  const { isTimerActive } = props
+  const { isTimerActive, description } = props
 
   if (isTimerActive) {
     return (
@@ -19,11 +20,7 @@ const WelcomeText: React.FC<IWelcomeTextProps> = props => {
     )
   }
 
-  return (
-    <TypographyText>
-      Press "Play" to start the game and wait for the first arrow to appear
-    </TypographyText>
-  )
+  return <TypographyText>{description}</TypographyText>
 }
 
 export default WelcomeText

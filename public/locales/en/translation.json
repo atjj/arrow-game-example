@@ -1,0 +1,33 @@
+{
+  "randomKeys": {
+    "title": "Random keys",
+    "desc": "Press 'Play' to start the game and wait for the first arrow to appear"
+  },
+  "keyPressed": {
+    "title": "Key pressed",
+    "desc": "Press the key corresponding to the key in 'Random keys'"
+  },
+  "Score": {
+    "title": "Score",
+    "desc": "On error, the 'Consecutive successful hits' value is reset to zero",
+    "errors": "Errors:",
+    "successful": "Successful:"
+  },
+  "gameDescription": {
+    "title": "↑↓→← Arrow-game description",
+    "desc1": "Player's goal is to press the keyboard arrow key that was shown to him before the next one appears.",
+    "desc2": "After three consecutive successful hits - game won, after three errors - lost."
+  },
+  "controlButtons": {
+    "play": "PLAY",
+    "pause": "PAUSE"
+  },
+  "modal": {
+    "win": {
+      "text1": "Well done!",
+      "text2": "You won!!"
+    },
+    "lost": "You lost the game",
+    "buttonText": "START NEW GAME"
+  }
+}

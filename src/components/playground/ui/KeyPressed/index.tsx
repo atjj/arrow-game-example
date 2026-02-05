@@ -6,12 +6,15 @@ import { setEnteredValue } from "../../slices"
 import { useAppDispatch } from "../../../../app/hooks"
 import { useKeyPressedElement } from "./hooks"
 import { TypographyHeader, TypographyText } from "../../../UI"
+import { useTranslation } from "react-i18next"
 export interface IKeyPressedProps {
   isTimerActive: boolean
 }
 
 const KeyPressed: React.FC<IKeyPressedProps> = props => {
   const { isTimerActive } = props
+
+  const { t } = useTranslation()
 
   const dispatch = useAppDispatch()
 
@@ -39,11 +42,9 @@ const KeyPressed: React.FC<IKeyPressedProps> = props => {
 
   return (
     <div>
-      <TypographyHeader>Key pressed</TypographyHeader>
+      <TypographyHeader>{t("keyPressed.title")}</TypographyHeader>
       <div className={styles.container}>
-        <TypographyText>
-          Press the key corresponding to the key in "Random keys"
-        </TypographyText>
+        <TypographyText>{t("keyPressed.desc")}</TypographyText>
         <div className={styles.wrapper}>
           <span className={styles.icon}>{keyPressedElement}</span>
         </div>
