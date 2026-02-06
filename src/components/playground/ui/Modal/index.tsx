@@ -11,7 +11,7 @@ export interface IModalProps {
 }
 
 import styles from "./style.module.css"
-const Modal: React.FC<IModalProps> = props => {
+export const Modal: React.FC<IModalProps> = props => {
   const { t } = useTranslation()
   const { setIsShowModal, isSuccessEndGame } = props
 
@@ -37,5 +37,3 @@ const Modal: React.FC<IModalProps> = props => {
     </MaterialModal>
   )
 }
-
-export default Modal

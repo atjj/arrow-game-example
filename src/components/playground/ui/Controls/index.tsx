@@ -7,7 +7,7 @@ export interface IControlsProps {
   setIsTimerActive: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const Controls: React.FC<IControlsProps> = props => {
+export const Controls: React.FC<IControlsProps> = props => {
   const { t } = useTranslation()
   const { isTimerActive, setIsTimerActive } = props
 
@@ -36,5 +36,3 @@ const Controls: React.FC<IControlsProps> = props => {
     </div>
   )
 }
-
-export default Controls

@@ -2,12 +2,15 @@ import { useAppDispatch, useAppSelector } from "../../app/hooks"
 import { setCurrentStep, setSteps, setUnsuccess } from "./slices"
 import { useEffect, useState, useRef } from "react"
 import { END_GAME_CONDITIONS, INTERVAL_TIME } from "./constants"
-import Controls from "./ui/Controls"
-import RandommKeys from "./ui/RandomKeys"
-import KeyPressed from "./ui/KeyPressed"
-import Score from "./ui/Score"
-import Modal from "./ui/Modal"
-import Description from "./ui/Description"
+import {
+  RandommKeys,
+  Controls,
+  KeyPressed,
+  Score,
+  Description,
+  Modal,
+} from "./ui/"
+
 import styles from "./style.module.css"
 
 const Playground: React.FC = () => {

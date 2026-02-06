@@ -1,6 +1,6 @@
 import { TypographyHeader, TypographyText } from "../../../UI"
 import { useTranslation } from "react-i18next"
-const Description: React.FC = () => {
+export const Description: React.FC = () => {
   const { t } = useTranslation()
   return (
     <div>
@@ -10,5 +10,3 @@ const Description: React.FC = () => {
     </div>
   )
 }
-
-export default Description

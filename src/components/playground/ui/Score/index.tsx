@@ -4,7 +4,7 @@ import { TypographyHeader, TypographyText } from "../../../UI"
 import styles from "./style.module.css"
 import { useTranslation } from "react-i18next"
 
-const Score: React.FC = () => {
+export const Score: React.FC = () => {
   const { t } = useTranslation()
   const state = useAppSelector(state => state.playground)
   return (
@@ -36,5 +36,3 @@ const Score: React.FC = () => {
     </>
   )
 }
-
-export default Score

@@ -11,7 +11,7 @@ export interface IKeyPressedProps {
   isTimerActive: boolean
 }
 
-const KeyPressed: React.FC<IKeyPressedProps> = props => {
+export const KeyPressed: React.FC<IKeyPressedProps> = props => {
   const { isTimerActive } = props
 
   const { t } = useTranslation()
@@ -52,5 +52,3 @@ const KeyPressed: React.FC<IKeyPressedProps> = props => {
     </div>
   )
 }
-
-export default KeyPressed

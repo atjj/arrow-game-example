@@ -1,1 +1,6 @@
 export * from "./Description"
+export * from "./Controls"
+export * from "./KeyPressed"
+export * from "./Modal"
+export * from "./RandomKeys"
+export * from "./Score"

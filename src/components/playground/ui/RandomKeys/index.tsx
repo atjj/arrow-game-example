@@ -6,7 +6,7 @@ export interface IRandommKeysProps {
   isTimerActive: boolean
 }
 
-const RandommKeys: React.FC<IRandommKeysProps> = props => {
+export const RandommKeys: React.FC<IRandommKeysProps> = props => {
   const { isTimerActive } = props
   const state = useAppSelector(state => state.playground)
   const { t } = useTranslation()
@@ -23,5 +23,3 @@ const RandommKeys: React.FC<IRandommKeysProps> = props => {
     </div>
   )
 }
-
-export default RandommKeys
